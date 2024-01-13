@@ -1,0 +1,27 @@
+[
+  {
+    "author": {
+      "username": "sendUser"
+    },
+    "createdAt": 20231226,
+    "id": "10001",
+    "text": "Hi"
+  },
+  {
+    "author": {
+      "username": "receivedUser"
+    },
+    "createdAt": 20231227,
+    "id": "10002",
+    "text": "Hello adsasda asdadasd asdasdas asdasdasd"
+  },
+  {
+    "author": {
+      "username": "sendUser"
+    },
+    "createdAt": 20231228,
+    "id": "10003",
+    "text": "Perfect morning!",
+    "imageUrl": "https://www.pngmart.com/files/13/Cartoon-Character-PNG-Transparent-Picture.png"
+  }
+]
