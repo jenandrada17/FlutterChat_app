@@ -9,7 +9,7 @@
   },
   {
     "author": {
-      "username": "receivedUser"
+      "username": "jennifer"
     },
     "createdAt": 20231227,
     "id": "10002",
@@ -22,6 +22,6 @@
     "createdAt": 20231228,
     "id": "10003",
     "text": "Perfect morning!",
-    "imageUrl": "https://www.pngmart.com/files/13/Cartoon-Character-PNG-Transparent-Picture.png"
+    "download_url": "https://www.pngmart.com/files/13/Cartoon-Character-PNG-Transparent-Picture.png"
   }
 ]

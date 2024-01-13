@@ -1,9 +1,9 @@
 import 'package:chat_app/services/auth_service.dart';
 import 'package:chat_app/utils/spaces.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:social_media_buttons/social_media_button.dart';
 import 'package:url_launcher/url_launcher.dart';
-
 import 'widgets/login_text_field.dart';
 
 class LoginPage extends StatelessWidget {
@@ -11,7 +11,7 @@ class LoginPage extends StatelessWidget {
 
   final _formkey = GlobalKey<FormState>();
 
-  Future<void> loginUser(context) async {
+  Future<void> loginUser(BuildContext context) async {
     if(_formkey.currentState!=null && _formkey.currentState!.validate()){
       print(userNameController.text);
       print(passwordController.text);

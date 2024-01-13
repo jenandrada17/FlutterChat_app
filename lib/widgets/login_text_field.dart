@@ -23,7 +23,7 @@ class LoginTextField extends StatelessWidget {
       },
       controller: controller,
       decoration: InputDecoration(
-          hintText: 'Add your hintext',
+          hintText: '$hintText',
           hintStyle: ThemeTextStyles.loginTextFieldStyle,
           border: OutlineInputBorder()
       ),
