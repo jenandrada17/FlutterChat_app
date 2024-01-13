@@ -30,6 +30,43 @@ class LoginPage extends StatelessWidget {
   final passwordController = TextEditingController();
   final Uri toLaunch = Uri(scheme: 'https', host: 'www.google.com');
 
+  Widget _buildHeader(context){
+    return Column(
+      children: [
+
+        Text(
+          'Let\'s sign you in!',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+              fontSize: 30,
+              color: Colors.black,
+              fontWeight: FontWeight.bold, letterSpacing: 0.5
+          ),
+        ),
+
+        Text('Welcome back! \n You\'ve been missed!',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20, color: Colors.blueGrey),
+        ),
+        // verticalSpacing(24),
+        Container(
+          height: 200,
+          width: MediaQuery.of(context).size.width,
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                // fit: BoxFit.fitWidth,
+                  image: AssetImage('assets/duck.png')),
+              borderRadius: BorderRadius.circular(24)),
+        ),
+        verticalSpacing(24),
+      ],
+    );
+  }
+
+  Widget _buildFooter(){}
+
+  Widget _buildForm(){}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,41 +80,6 @@ class LoginPage extends StatelessWidget {
             // crossAxisAlignment: CrossAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text(
-                'Let\'s sign you in!',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold, letterSpacing: 0.5
-                ),
-              ),
-
-              Text('Welcome back! \n You\'ve been missed!',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20, color: Colors.blueGrey),
-              ),
-              // verticalSpacing(24),
-              Container(
-                height: 200,
-                width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        // fit: BoxFit.fitWidth,
-                        image: AssetImage('assets/duck.png')),
-                    borderRadius: BorderRadius.circular(24)),
-              ),
-              verticalSpacing(24),
-
-              // TextField(
-              //   controller: userNameController,
-              //   decoration: InputDecoration(
-              //     hintText: 'Add your intext',
-              //     hintStyle: TextStyle(color: Colors.blueGrey),
-              //     border: OutlineInputBorder()
-              //   ),
-              // ),
-
               Form(
                 key: _formkey,
                 child: Column(
